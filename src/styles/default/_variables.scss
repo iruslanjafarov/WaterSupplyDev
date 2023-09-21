@@ -4,6 +4,9 @@ h1, h2, h4, h5, h6, a {
 h3, p, address {
     font-family: 'Cormorant Garamond', serif;
 }
+body {
+    scroll-behavior: smooth;
+}
 .container {
     max-width: 1290px;
     width: 100%;
