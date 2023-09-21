@@ -1,0 +1,41 @@
+.reviews {
+    &-container {
+        padding-top: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-text {
+        position: relative;
+    }
+    &__quote {
+        position: absolute;
+        top: -85px;
+    }
+    &__title {
+        font-size: 12px;
+        color: #215565;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__description {
+        font-size: 26px;
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+    &__signature {
+        &::before {
+            content: "";
+            display: inline-block;
+            vertical-align: super;
+            width: 14px;
+            height: 1px;
+            background-color: #215565;
+            margin-right: 3px;
+        }
+        font-size: 16px;
+        color: #215565;
+        letter-spacing: 2px;
+        margin-top: 40px;
+    }
+}

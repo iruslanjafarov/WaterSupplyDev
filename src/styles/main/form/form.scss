@@ -1,0 +1,64 @@
+.form {
+    &-container {
+        padding-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-size: 36px;
+        color: #215565;
+        font-weight: normal;
+        letter-spacing: 6px;
+        span {
+            color: rgba(98, 158, 26, 0.72);;
+        }
+    }
+    &__description {
+        margin-top: 16px;
+        font-size: 32px;
+        color: #374143;
+    }
+    &__input {
+        margin-top: 16px;
+        width: 394px;
+        height: 57px;
+        padding: 0px 18px;
+        font-size: 12px;
+        color: #215565;
+        font-weight: bold;
+        border-radius: 16px;
+        border: 1px solid rgba(98, 158, 26, 0.72);
+        background: rgba(98, 158, 26, 0.00);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        &::placeholder {
+            font-family: 'Kaisei Tokumin', serif;
+            color: #215565;
+            opacity: 0.5;
+            letter-spacing: 2px;
+        }
+    }
+    &__button {
+        font-family: 'Cormorant Garamond', serif;
+        margin-top: 26px;
+        text-align: center;
+        font-size: 26px;
+        color: #374143;
+        padding: 0px 50px;
+        height: 57px;
+        border-radius: 16px;
+        background: rgba(98, 158, 26, 0.22);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: 0px;
+        cursor: pointer;
+        transition: all 200ms ease 0s;
+        img {
+            position: relative;
+            top: 4px;
+            left: 10px;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

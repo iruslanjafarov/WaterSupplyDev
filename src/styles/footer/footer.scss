@@ -1,0 +1,83 @@
+.footer {
+    &-container {
+        max-width: 100%;
+        margin-top: 100px;
+        padding: 0;
+        background-color: rgba(98, 158, 26, 0.25);
+    }
+    .container {
+        padding: 30px 0px;
+        display: flex;
+        align-items: center;
+        
+    }
+    &-contacts {
+        &__title {
+            font-family: 'Kaisei Tokumin', serif;
+            font-size: 20px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        &__number {
+            font-family: 'Cormorant Garamond', serif;
+            display: inline-block;
+            font-size: 24px;
+            color: #374143;
+            margin-top: 11px;
+            font-weight: normal;
+            text-decoration: none;
+        }
+    }
+    &-address {
+        margin: 0px 100px;
+        &__title {
+            font-family: 'Kaisei Tokumin', serif;
+            font-size: 20px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+        &__text {
+            font-size: 24px;
+            color: #374143;
+            font-style: normal;
+        }
+    }
+    &-media {
+        &__title {
+            font-family: 'Kaisei Tokumin', serif;
+            font-size: 20px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-style: normal;
+        }
+        &-block {
+            text-align: center;
+        }
+        &__image {
+            margin: 20px 30px 0px 0px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+    &-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        &__image {
+            width: 65px;
+            height: 67px;
+        }
+        &__text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+    }
+}

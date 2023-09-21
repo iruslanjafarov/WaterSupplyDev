@@ -1,0 +1,29 @@
+.users {
+    &-container {
+        padding-top: 93px;
+    }
+    &__title {
+        font-size: 36px;
+        color: #215565;
+        font-weight: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &-gallery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+    &__img {
+        width: 195px;
+        height: 216px;
+        object-fit: cover;
+        transition: all 200ms ease 0s;
+        border-radius: 7px;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
