@@ -4,28 +4,48 @@
         margin-top: 100px;
         padding: 0;
         background-color: rgba(98, 158, 26, 0.25);
+        @media (max-width: 870px) {
+            margin-top: 50px;
+        }
     }
     .container {
         padding: 30px 0px;
         display: flex;
         align-items: center;
-        
+        @media (max-width: 870px) {
+            justify-content: center;
+        }
+        @media (max-width: 780px) {
+            flex-wrap: wrap;
+        }
     }
     &-contacts {
         &__title {
-            font-family: 'Kaisei Tokumin', serif;
+            font-family: "Kaisei Tokumin", serif;
             font-size: 20px;
             letter-spacing: 4px;
             text-transform: uppercase;
+            @media (max-width: 1350px) {
+                font-size: 15px;
+            }
         }
         &__number {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: "Cormorant Garamond", serif;
             display: inline-block;
             font-size: 24px;
             color: #374143;
             margin-top: 11px;
             font-weight: normal;
             text-decoration: none;
+            @media (max-width: 1350px) {
+                font-size: 22px;
+            }
+        }
+        @media (max-width: 780px) {
+            margin: 10px;
+        }
+        @media (max-width: 370px) {
+            margin: 20px;
         }
     }
     &-address {
@@ -36,11 +56,26 @@
             letter-spacing: 4px;
             text-transform: uppercase;
             font-style: normal;
+            @media (max-width: 1350px) {
+                font-size: 15px;
+            }
         }
         &__text {
             font-size: 24px;
             color: #374143;
             font-style: normal;
+            @media (max-width: 1350px) {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 870px) {
+            margin: 0 50px;
+        }
+        @media (max-width: 780px) {
+            margin: 10px;
+        }
+        @media (max-width: 370px) {
+            margin: 20px;
         }
     }
     &-media {
@@ -63,21 +98,26 @@
                 margin-right: 0px;
             }
         }
+        @media (max-width: 370px) {
+            margin: 20px;
+        }
     }
     &-logo {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-left: auto;
-        &__image {
-            width: 65px;
-            height: 67px;
-        }
         &__text {
             font-family: 'Cormorant Garamond', serif;
             font-size: 20px;
             letter-spacing: 1px;
             margin-top: 20px;
+            @media (max-width: 1350px) {
+                font-size: 17px;
+            }
+        }
+        @media (max-width: 870px) {
+            display: none;
         }
     }
 }

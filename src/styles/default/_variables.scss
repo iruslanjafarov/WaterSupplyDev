@@ -1,15 +1,50 @@
 h1, h2, h4, h5, h6, a {
-    font-family: 'Kaisei Tokumin', serif;
+    font-family: "Kaisei Tokumin", serif;
 }
 h3, p, address {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
 }
 body {
     scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 5px solid transparent;
+    background-clip: content-box;
+    border-radius: 10px;
+}
+img {
+    object-fit: cover;
 }
 .container {
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
     padding: 0px 10px;
+    @media (max-width: 1350px) {
+        max-width: 1170px;
+    }
+    @media (max-width: 1200px) {
+        max-width: 1070px;
+    }
+    @media (max-width: 1100px) {
+        max-width: 1000px;
+    }
+    @media (max-width: 1030px) {
+        max-width: 950px;
+    }
+    @media (max-width: 990px) {
+        max-width: 900px;
+    }
+    @media (max-width: 910px) {
+        max-width: 870px;
+    }
+    @media (max-width: 870px) {
+        max-width: 830px;
+    }
 }

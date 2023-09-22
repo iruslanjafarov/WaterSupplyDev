@@ -1,6 +1,6 @@
 .users {
     &-container {
-        padding-top: 93px;
+        margin-top: 93px;
     }
     &__title {
         font-size: 36px;
@@ -9,12 +9,24 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         text-align: center;
+        @media (max-width: 1030px) {
+            font-size: 30px;
+        }
+        @media (max-width: 500px) {
+            font-size: 25px;
+        }
     }
     &-gallery {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 30px;
+        @media (max-width: 1350px) {
+            justify-content: space-around;
+        }
+        @media (max-width: 870px) {
+            flex-wrap: wrap;
+        }
     }
     &__img {
         width: 195px;
@@ -24,6 +36,16 @@
         border-radius: 7px;
         &:hover {
             transform: scale(1.03);
+        }
+        @media (max-width: 1350px) {
+            &:hover {
+                transform: none;
+            }
+            width: 150px;
+            height: 170px;
+        }
+        @media (max-width: 870px) {
+            margin: 10px 20px;
         }
     }
 }

@@ -1,9 +1,14 @@
 .form {
     &-container {
-        padding-top: 200px;
+        margin-top: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 800px) {
+            text-align: center;
+            display: block;
+            margin-top: 150px;
+        }
     }
     &__title {
         font-size: 36px;
@@ -11,13 +16,25 @@
         font-weight: normal;
         letter-spacing: 6px;
         span {
-            color: rgba(98, 158, 26, 0.72);;
+            color: rgba(98, 158, 26, 0.72);
+        }
+        @media (max-width: 1350px) {
+            font-size: 30px;
+        }
+        @media (max-width: 1030px) {
+            font-size: 25px;
+        }
+        @media (max-width: 870px) {
+            font-size: 20px;
         }
     }
     &__description {
         margin-top: 16px;
         font-size: 32px;
         color: #374143;
+        @media (max-width: 1350px) {
+            font-size: 27px;
+        }
     }
     &__input {
         margin-top: 16px;
@@ -36,6 +53,12 @@
             color: #215565;
             opacity: 0.5;
             letter-spacing: 2px;
+        }
+        @media (max-width: 1030px) {
+            height: 50px;
+        }
+        @media (max-width: 440px) {
+            width: 300px;
         }
     }
     &__button {
@@ -56,9 +79,29 @@
             position: relative;
             top: 4px;
             left: 10px;
+            @media (max-width: 870px) {
+                display: none;
+            }
         }
         &:active {
             transform: scale(0.95);
+        }
+        @media (max-width: 1030px) {
+            height: 45px;
+        }
+        @media (max-width: 870px) {
+            font-size: 20px;
+        }
+    }
+    &__image {
+        @media (max-width: 1350px) {
+            max-width: 350px;
+        }
+        @media (max-width: 870px) {
+            max-width: 300px;
+        }
+        @media (max-width: 800px) {
+            display: none;
         }
     }
 }
