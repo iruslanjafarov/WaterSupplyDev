@@ -18,6 +18,9 @@
         @media (max-width: 1350px) {
             font-size: 30px;
         }
+        @media (max-width: 800px) {
+            text-decoration: underline;
+        }
         @media (max-width: 870px) {
             font-size: 25px;
         }
@@ -36,6 +39,9 @@
         @media (max-width: 870px) {
             margin-top: 30px;
             font-size: 18px;
+        }
+        @media (max-width: 800px) {
+            text-decoration: underline;
         }
     }
     &__button {

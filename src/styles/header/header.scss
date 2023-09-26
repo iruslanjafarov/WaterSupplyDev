@@ -4,12 +4,59 @@
         display: flex;
         align-items: center;
         @media (max-width: 800px) {
-            display: none;
+            justify-content: space-between;
+        }
+    }
+    .burger {
+        display: none;
+        z-index: 5;
+        @media (max-width: 800px) {
+            display: block;
+            width: 25px;
+            span {
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: black;
+                margin-bottom: 3px;
+                transition: all 365ms ease 0s;
+            }
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
         }
     }
     &-links {
         margin: auto;
         cursor: default;
+        transition: all 600ms ease 0s;
+        @media (max-width: 800px) {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: -100%;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba($color: black, $alpha: 0.8);
+            &_active {
+                display: flex;
+                top: 0;
+            }
+        }
     }
     &__link {
         font-size: 12px;
@@ -33,6 +80,7 @@
             position: absolute;
             left: 50%; 
             transform: translateX(-50%);
+            bottom: -3px;
             width: 0px;
             height: 2px;
             background-color: black;
@@ -46,6 +94,12 @@
                 content: none;
             }
             margin: 0px 20px;
+        }
+        @media (max-width: 800px) {
+            font-size: 16px;
+            font-weight: normal;
+            color: white;
+            margin: 10px 0px;
         }
     }
 }
