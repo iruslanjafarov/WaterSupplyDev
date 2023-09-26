@@ -40,9 +40,6 @@
             margin-top: 30px;
             font-size: 18px;
         }
-        @media (max-width: 800px) {
-            text-decoration: underline;
-        }
     }
     &__button {
         font-family: "Kaisei Tokumin", serif;
@@ -82,6 +79,8 @@
         }
     }
     &__image {
+        width: 420px;
+        height: 483px;
         @media (max-width: 1350px) {
             max-width: 350px;
         }

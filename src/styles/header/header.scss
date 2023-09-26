@@ -7,9 +7,15 @@
             justify-content: space-between;
         }
     }
+    &__logo {
+        @media (max-width: 800px) {
+            width: 50px;
+            height: 52px;
+        }
+    }
     .burger {
         display: none;
-        z-index: 5;
+        z-index: 3;
         @media (max-width: 800px) {
             display: block;
             width: 25px;
